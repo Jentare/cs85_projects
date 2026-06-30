@@ -22,37 +22,12 @@
                 $firstName = "Jeni";
                 $jsonString = @file_get_contents('https://timeapi.io/api/time/current/zone?timeZone=America%2FLos_Angeles');
                 $data = json_decode($jsonString);
-                    
+             
                 $nameLength = strlen($firstName);
                 $dateTimeString = $data->dateTime;
                 $date = new DateTime($dateTimeString);
                 $dayOfYear = (int)$date->format('z') + 1;
                 $month = $data->month;
 
-                for ($i = $nameLength; $i <= $dayOfYear; $i++){
-                    $cssClass = "day-box";
-
-                    if($i % $nameLength == 0 && $i % $month == 0){
-                        $cssClass .= "cosmic-both";
-                    } else if($i % $nameLength == 0){
-                        $cssClass .= "cosmic-name";
-                    } else if($i % $month == 0){
-                        $cssClass .= "cosmic-month";
-                    }
-
-              echo "<div class='$cssClass'>$i</div>";
-                }
-            ?>
-        </div>
-    </div>
-</body>
-</html>
-
-<?php
-/*
-MY DEBUGGING LOG:
-Problem: I was missing the $ sign in my loop. I had i++ not $i++
-Solution: Updated i++ to $i++
-
-*/
+                
 ?> 
