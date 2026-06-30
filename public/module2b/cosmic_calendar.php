@@ -43,7 +43,7 @@
               echo "<div class='$cssClass'>$i</div>";
                 }
 
-                    /*
+            /*
             MY DEBUGGING LOG:
             Problem: I was missing the $ sign in my loop. I had i++ not $i++
             Solution: Updated i++ to $i++
