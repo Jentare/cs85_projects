@@ -42,5 +42,9 @@
 
               echo "<div class='$cssClass'>$i</div>";
                 }
+            ?>
+        </div>
+    </div>
+</body>
+</html>
 
-?> 
