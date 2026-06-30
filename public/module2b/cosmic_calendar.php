@@ -29,7 +29,7 @@
                 $dayOfYear = (int)$date->format('z') + 1;
                 $month = $data->month;
 
-                     for ($i = $nameLength; $i <= $dayOfYear; i++){
+                     for ($i = $nameLength; $i <= $dayOfYear; $i++){
                     $cssClass = "day-box";
 
                     if($i % $nameLength == 0 && $i % $month == 0){
