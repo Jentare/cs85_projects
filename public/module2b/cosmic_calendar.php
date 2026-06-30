@@ -33,11 +33,11 @@
                     $cssClass = "day-box";
 
                     if($i % $nameLength == 0 && $i % $month == 0){
-                        $cssClass .= "cosmic-both";
+                        $cssClass .= " cosmic-both";
                     } else if($i % $nameLength == 0){
-                        $cssClass .= "cosmic-name";
+                        $cssClass .= " cosmic-name";
                     } else if($i % $month == 0){
-                        $cssClass .= "cosmic-month";
+                        $cssClass .= " cosmic-month";
                     }
 
               echo "<div class='$cssClass'>$i</div>";
