@@ -47,6 +47,8 @@
             MY DEBUGGING LOG:
             Problem: I was missing the $ sign in my loop. I had i++ not $i++
             Solution: Updated i++ to $i++
+            Problem 2: The page was not displaying correctly because I took out the space between " and cosmic.
+            Solution: I added spaces before so that it reads day-box and cosmic-both, cosmic-name, and cosmic-month as separate instructions
             */
             ?>
         </div>
