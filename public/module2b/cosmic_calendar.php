@@ -29,5 +29,18 @@
                 $dayOfYear = (int)$date->format('z') + 1;
                 $month = $data->month;
 
-                
+                 for ($i = $nameLength; $i <= $dayOfYear; i++){
+                    $cssClass = "day-box";
+
+                    if($i % $nameLength == 0 && $i % $month == 0){
+                        $cssClass .= "cosmic-both";
+                    } else if($i % $nameLength == 0){
+                        $cssClass .= "cosmic-name";
+                    } else if($i % $month == 0){
+                        $cssClass .= "cosmic-month";
+                    }
+
+              echo "<div class='$cssClass'>$i</div>";
+                }
+
 ?> 
